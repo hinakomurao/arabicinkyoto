@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArabicInKyoto</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="icons-1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="animate.css-main/animate.min.css">
+  </head>
+  <!-- header 別ファイル -->
+  <header id="header"></header>
+
+  <body class="bg-primary">
+    <!-- slide show by bootstrap -->
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner kyoto-img">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="img/0adpDSC_1077.jpg" class="d-block" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="img/0adpDSC_1248.jpg" class="d-block" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="img/adDSC_2214.jpg" class="d-block" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="kyoto">
+        <h1 class="text-light display-3 animate__animated animate__fadeInLeft animate__slower">KYOTO</h1>
+        <h3 class="catch text-light animate__animated animate__fadeInLeft animate__slower">京都</p>
+      </div>
+    </div>
+    <!--slide show終わり-->
+
+    <!-- about us -->
+
+    <div class="about-us container">
+      <h1 class="text-light">Your Japan travel guide</h1>
+      <div class="col-lg-4 col-sm-12">
+        <p class="text-light" style="line-height: 3em;">
+          It is easy to feel a little overwhelmed and disoriented when you visit Japan for the first time, <br>
+          so we help you plan your next trip.<br>
+          <br>
+        </p>
+      </div>
+    </div>
+  </body>
+  <footer id="footer"></footer>
+  <script src="script/jquery-3.6.1.min.js"></script>
+  <script src="script/bootstrap.min.js"></script>
+  <script>
+    $(function(){
+      $('#header').load('header.html'); 
+      $('#footer').load('footer.html'); 
+    });
+  </script>
+</html>

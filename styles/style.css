@@ -1,0 +1,34 @@
+.catch {
+  display: flex;
+  align-items: center; /* 垂直中心 */
+}
+.catch:before{
+  border-top: 1px solid;
+  content: "";
+  width: 3em; /* 線の長さ */
+}
+.catch:before {
+  margin-right: 1em;
+}
+
+body{
+  font-family: Georgia, serif !important;
+}
+
+.kyoto{
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+  z-index: 1000;
+  margin-bottom: -100px;
+}
+
+.kyoto-img img{
+  width: 89%;
+  display: block;
+  margin: auto;
+}
+
+.about-us{
+  margin-top: 100px;
+}
