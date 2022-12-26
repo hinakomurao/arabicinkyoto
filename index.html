@@ -11,19 +11,22 @@
   </head>
   <!-- header 別ファイル -->
   <header id="header"></header>
-
-  <body class="bg-primary">
+  <!-- 本文 -->
+  <body class="bg-dark">
     <!-- slide show by bootstrap -->
-    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade container-lg p-0" data-bs-ride="carousel">
       <div class="carousel-inner kyoto-img">
         <div class="carousel-item active" data-bs-interval="2000">
-          <img src="img/0adpDSC_1077.jpg" class="d-block" alt="...">
+          <img src="img/fushimi_inari.jpg" class="pc" alt="...">
+          <img src="img/fushimi_inari_sm.jpg" class="sp" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="img/0adpDSC_1248.jpg" class="d-block" alt="...">
+          <img src="img/kinkakuji.jpg" class="pc" alt="...">
+          <img src="img/kinkakuji_sm.jpg" class="sp" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="img/adDSC_2214.jpg" class="d-block" alt="...">
+          <img src="img/gojunoto.jpg" class="pc" alt="...">
+          <img src="img/gojunoto_sm.jpg" class="sp" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -35,24 +38,30 @@
         <span class="visually-hidden">Next</span>
       </button>
       <div class="kyoto">
-        <h1 class="text-light display-3 animate__animated animate__fadeInLeft animate__slower">KYOTO</h1>
-        <h3 class="catch text-light animate__animated animate__fadeInLeft animate__slower">京都</p>
+        <h1 class="display-3 animate__animated animate__fadeInLeft animate__slower text-light">KYOTO</h1>
+        <h3 class="catch animate__animated animate__fadeInLeft animate__slower text-light">京都</p>
       </div>
     </div>
     <!--slide show終わり-->
 
     <!-- about us -->
-
     <div class="about-us container">
       <h1 class="text-light">Your Japan travel guide</h1>
-      <div class="col-lg-4 col-sm-12">
-        <p class="text-light" style="line-height: 3em;">
-          It is easy to feel a little overwhelmed and disoriented when you visit Japan for the first time, <br>
-          so we help you plan your next trip.<br>
-          <br>
-        </p>
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <p class="text-light" style="line-height: 3em;">
+            It is easy to feel a little overwhelmed and disoriented <br>
+            when you visit Japan for the first time, <br>
+            so we help you plan your next trip.<br>
+            ※change sentences.<br>
+          </p>
+          <a href="/reservation.html" class="btn btn-light btn-lg reservation-button">Reservation ▶</a>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <img src="img/pontcho.jpg" alt="" class="w-100">
+        </div>
       </div>
-    </div>
+      </div>
   </body>
   <footer id="footer"></footer>
   <script src="script/jquery-3.6.1.min.js"></script>

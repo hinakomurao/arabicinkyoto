@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArabicInKyoto</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="icons-1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="animate.css-main/animate.min.css">
+  </head>
+  <!-- header 別ファイル -->
+  <header id="header"></header>
+  <!-- 本文 -->
+  <body class="bg-primary">
+    <div class="container">
+      <h1>Reservation</h1>
+      <form class="col-lg-8 m-auto text-center" action="/reservation.php" method="post">
+        <fieldset>
+          <div class="form-group">
+            <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleTextarea" class="form-label mt-4">Please write your name, and reservation date.</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+  <footer id="footer"></footer>
+  <script src="script/jquery-3.6.1.min.js"></script>
+  <script src="script/bootstrap.min.js"></script>
+  <script>
+    $(function(){
+      $('#header').load('header.html'); 
+      $('#footer').load('footer.html'); 
+    });
+  </script>
+</html>
